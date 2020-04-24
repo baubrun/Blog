@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="post-new title">New Post</div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn new_post_submit" type="submit" value="Save" />
+        <a  class="btn cancel__a"   href="{% url "home" %}">Cancel</a>
+    </form>
+  
+{% endblock content %}
