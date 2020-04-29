@@ -12,12 +12,16 @@
 
 
 
-  <div class="post">
-      <div class="post-detail title">{{ post.title }}</div>
+  <div >
+      <div >{{ post.title }}</div>
       <div>{{ post.body }}</div>
   </div>
-  <div class="post-detail-btns">
-    <a class="btn post-edit__a" href="{% url "post_edit" post.pk %}">Edit Post</a>
-    <a class="btn post-delete__a" href="{% url "post_delete" post.pk %}">Delete Post</a>
-</div>
+  <div >
+    <a class="nav-link" style="color: #FF8552;" 
+    href="{% url "post_edit" post.pk %}" role="button">Edit Post</a>
+    <a class="nav-link" href="{% url "post_delete" post.pk %}" 
+    role="button">Delete Post</a>
+  </div>
+
+
 {% endblock content %}

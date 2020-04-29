@@ -5,12 +5,12 @@
 {% endblock title %}
 
 {% block content %}
-  <div class="post-delete title">Delete Post</div>
-    <form action="" method="POST">
+  <div >Delete Post</div>
+    <form method="POST">
         {% csrf_token %}
         Are you sure you want to delete "{{ post.title }}"?
-        <input class="btn delete-confirm" type="submit" value="Confirm" />
-
+        <input class="btn delete-confirm" 
+        type="submit" value="Confirm" />
     </form>
 
 {% endblock content %}

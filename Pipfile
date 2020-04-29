@@ -9,6 +9,7 @@ autopep8 = "*"
 [packages]
 django = "==2.2.12"
 django-crispy-forms = "*"
+django-bootstrap4 = "*"
 
 [requires]
 python_version = "3.7"

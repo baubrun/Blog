@@ -7,12 +7,13 @@
 
 
 {% block content %}
-    <div class="post-edit title">Edit Post</div>
-    <form action="" method="POST">
+
+    <form class="my-5" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" class="btn edit_post_submit" value="Edit">
-        <a  class="btn cancel__a"   href="{% url "home" %}">Cancel</a>
+        <button class="btn btn-outline-dark mr-2" type="submit">Edit</button>
+        <a class="btn btn-outline-danger" 
+        href="{% url "home" %}" role="button">Cancel</a>
     </form>
 
 {% endblock content %}

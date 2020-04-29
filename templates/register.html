@@ -7,10 +7,14 @@
 {% endblock title %}
 
 {% block content %}
-    <div class="register title">Register</div>
-    <form action="" method="POST">
+    
+    <form method="POST" class="my-5">
       {% csrf_token %}
       {{ form|crispy }}
-      <input class="btn register" type="submit" value="Register" />
+      
+      <button class="btn btn-outline-success" 
+      type="submit">Submit</button>
     </form>
+
 {% endblock content %}
+
